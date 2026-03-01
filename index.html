@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
 <div class="title">
   <h3>Recent Posts</h3>
 </div>
@@ -38,4 +39,5 @@ layout: default
     <a href="{{ paginator.next_page_path | relative_url }}" class="next">NEXT</a>
   {% endif %}
 </div>
+
 {% endif %}
