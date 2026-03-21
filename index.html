@@ -20,7 +20,7 @@
   <meta name="msvalidate.01" content="A933DE178AFE66EE7C8F285330E79B4E" />
 
 <style>
-  /* 기본 여백 완전 제거 (중복 태그 삭제 완료) */
+  /* 기본 여백 완전 제거 */
   body, html { 
     margin: 0; 
     padding: 0; 
@@ -51,21 +51,24 @@
     border-left: 3px solid;
     border-bottom: 3px solid;
     border-radius: 0;
-    padding: 8px 16px; /* 글씨가 작아진 만큼 박스 크기도 줄임 */
+    padding: 8px 16px;
     z-index: 9999;
     list-style: none;
-    animation: rgb-flash 0.3s infinite linear; 
+    
+    /* 🔥 속도를 0.3s -> 0.02s로 극강의 스피드로 수정! */
+    animation: rgb-flash 0.02s infinite linear; 
   }
 
   /* 메뉴 안의 글자 스타일 */
   .custom-menu span {
-    font-size: 12px; /* 👈 글자 크기 줄임! */
+    font-size: 12px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
-    /* ❌ text-transform: uppercase; 범인 삭제 완료! */
     letter-spacing: 1px;
     cursor: pointer;
-    animation: rgb-flash 0.3s infinite linear; 
+    
+    /* 🔥 여기도 속도를 0.02s로 동일하게 수정! */
+    animation: rgb-flash 0.02s infinite linear; 
   }
 </style>
 </head>
