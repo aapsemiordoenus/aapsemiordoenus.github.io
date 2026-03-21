@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>The Secret Archive of aapsemiordoenus | Cybersecurity & Beyond: Paranoia Mind Hub -> I Love Genshin Impact !!! &larr;</title>
+  
+  <link rel="stylesheet" href="https://tistory1.daumcdn.net/tistory/8568038/skin/images/style_topiece_v01.css" />
+  <link rel="stylesheet" media="screen" type="text/css" href="https://tistory1.daumcdn.net/tistory/8568038/skin/style.css" />
+</head>
+<body id="tt-body-page">
+
+  <div id="header">
+    <nav>
+      <h1><a href="#">aapsemiordoenus</a></h1>
+    </nav>
+  </div>
+
+  <div id="wrap">
+    <div class="section_1">
+      <div id="article">
+        <div class="title">
+          <h2><a href="#">Secret Archive</a></h2>
+          <h3><a id="headline" href="#">ㅅㄷㄴㅅ</a></h3>
+        </div>
+        
+        <div style="width: 100%; height: 800px; overflow: hidden; margin-top: 20px;">
+          <iframe 
+            src="https://aapsemiordoenus.notion.site/ebd//3106717abb524fec8947c86dbd8447af" 
+            style="width: 100%; height: calc(100% + 45px); border: none; margin-top: -45px;">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section_2">
+      <div class="sidebox blogimg_box">
+        <div class="imgbox">
+          <img src="https://tistory1.daumcdn.net/tistory/8568038/attach/b98c566bdf5e4bddbe86826f31d6ebe6" alt="Profile">
+        </div>
+        <span class="blog_name" style="display:block; margin-top:10px; font-weight:bold;">aapsemiordoenus</span>
+        <span class="blog_comment" style="display:block; margin-top:5px; font-size:12px;">The Secret Archive of aapsemiordoenus | Cybersecurity & Beyond: Paranoia Mind Hub -> I Love Genshin Impact !!! &larr;</span>
+      </div>
+
+      <div class="sidebox category">
+        <h3><span style="color: #ec008c;">[- 𓆩 Index 𓆪 -]</span></h3>
+        <div class="categorylist">
+          <ul class="tt_category">
+            <li><a href="#" class="link_tit">분류 전체보기</a></li>
+            <li><a href="#" class="link_item">test</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
