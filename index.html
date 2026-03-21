@@ -32,14 +32,14 @@
   
   /* 🔥 1. RGB 무지개 발광 (유지) */
   @keyframes rgb-flash {
-    0%   { color: #ff0000; border-color: #ff0000; box-shadow: -2px 2px 15px rgba(255, 0, 0, 0.8); text-shadow: 0 0 10px #ff0000; }
-    15%  { color: #ff7f00; border-color: #ff7f00; box-shadow: -2px 2px 15px rgba(255, 127, 0, 0.8); text-shadow: 0 0 10px #ff7f00; }
-    30%  { color: #ffff00; border-color: #ffff00; box-shadow: -2px 2px 15px rgba(255, 255, 0, 0.8); text-shadow: 0 0 10px #ffff00; }
-    45%  { color: #00ff00; border-color: #00ff00; box-shadow: -2px 2px 15px rgba(0, 255, 0, 0.8); text-shadow: 0 0 10px #00ff00; }
-    60%  { color: #0000ff; border-color: #0000ff; box-shadow: -2px 2px 15px rgba(0, 0, 255, 0.8); text-shadow: 0 0 10px #0000ff; }
-    75%  { color: #4b0082; border-color: #4b0082; box-shadow: -2px 2px 15px rgba(75, 0, 130, 0.8); text-shadow: 0 0 10px #4b0082; }
-    90%  { color: #9400d3; border-color: #9400d3; box-shadow: -2px 2px 15px rgba(148, 0, 211, 0.8); text-shadow: 0 0 10px #9400d3; }
-    100% { color: #ff0000; border-color: #ff0000; box-shadow: -2px 2px 15px rgba(255, 0, 0, 0.8); text-shadow: 0 0 10px #ff0000; }
+    0%   { color: #ff0000; border-color: #ff0000; box-shadow: -2px 2px 15px rgba(255, 0, 0, 2.0); text-shadow: 0 0 10px #ff0000; }
+    15%  { color: #ff7f00; border-color: #ff7f00; box-shadow: -2px 2px 15px rgba(255, 127, 0, 2.0)); text-shadow: 0 0 10px #ff7f00; }
+    30%  { color: #ffff00; border-color: #ffff00; box-shadow: -2px 2px 15px rgba(255, 255, 0, 2.0)); text-shadow: 0 0 10px #ffff00; }
+    45%  { color: #00ff00; border-color: #00ff00; box-shadow: -2px 2px 15px rgba(0, 255, 0, 2.0)); text-shadow: 0 0 10px #00ff00; }
+    60%  { color: #0000ff; border-color: #0000ff; box-shadow: -2px 2px 15px rgba(0, 0, 255, 2.0)); text-shadow: 0 0 10px #0000ff; }
+    75%  { color: #4b0082; border-color: #4b0082; box-shadow: -2px 2px 15px rgba(75, 0, 130, 2.0)); text-shadow: 0 0 10px #4b0082; }
+    90%  { color: #9400d3; border-color: #9400d3; box-shadow: -2px 2px 15px rgba(148, 0, 211, 2.0)); text-shadow: 0 0 10px #9400d3; }
+    100% { color: #ff0000; border-color: #ff0000; box-shadow: -2px 2px 15px rgba(255, 0, 0, 2.0); text-shadow: 0 0 10px #ff0000; }
   }
 
   /* 🔥 2. 시스템 오류 지진 효과 (상자가 미친듯이 흔들림) */
@@ -90,8 +90,8 @@
     letter-spacing: 1px;
     cursor: pointer;
     
-    /* RGB 발광(0.02초) + 글자 흐르기(0.8초의 빠른 속도) 동시 적용 */
-    animation: rgb-flash 0.02s infinite linear, flow-text 0.8s infinite linear; 
+    /* RGB 발광(0.02초) + 글자 흐르기(2.0초의 빠른 속도) 동시 적용 */
+    animation: rgb-flash 0.02s infinite linear, flow-text 2.0s infinite linear; 
   }
 </style>
 </head>
