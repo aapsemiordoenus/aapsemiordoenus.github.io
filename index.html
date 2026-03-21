@@ -19,63 +19,55 @@
   <meta name="naver-site-verification" content="71e6b0c8a3405221476e95ba3c862cb33b308659" />
   <meta name="msvalidate.01" content="A933DE178AFE66EE7C8F285330E79B4E" />
 
-  <style>
-    /* 기본 여백 제거 */
-    body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; }
-    
-/* 우리가 만든 가짜 링크 메뉴 스타일 */
 <style>
-    /* 기본 여백 완전 제거 */
-    body, html { 
-      margin: 0; 
-      padding: 0; 
-      width: 100%; 
-      height: 100%; 
-      overflow: hidden; 
-      background-color: #000; 
-    }
-    
-    /* 🔥 핵심: 모든 색깔이 순식간에 바뀌는 RGB 애니메이션 정의 */
-    @keyframes rgb-flash {
-      0%   { color: #ff0000; border-color: #ff0000; box-shadow: -2px 2px 15px rgba(255, 0, 0, 0.8); text-shadow: 0 0 10px #ff0000; }
-      15%  { color: #ff7f00; border-color: #ff7f00; box-shadow: -2px 2px 15px rgba(255, 127, 0, 0.8); text-shadow: 0 0 10px #ff7f00; }
-      30%  { color: #ffff00; border-color: #ffff00; box-shadow: -2px 2px 15px rgba(255, 255, 0, 0.8); text-shadow: 0 0 10px #ffff00; }
-      45%  { color: #00ff00; border-color: #00ff00; box-shadow: -2px 2px 15px rgba(0, 255, 0, 0.8); text-shadow: 0 0 10px #00ff00; }
-      60%  { color: #0000ff; border-color: #0000ff; box-shadow: -2px 2px 15px rgba(0, 0, 255, 0.8); text-shadow: 0 0 10px #0000ff; }
-      75%  { color: #4b0082; border-color: #4b0082; box-shadow: -2px 2px 15px rgba(75, 0, 130, 0.8); text-shadow: 0 0 10px #4b0082; }
-      90%  { color: #9400d3; border-color: #9400d3; box-shadow: -2px 2px 15px rgba(148, 0, 211, 0.8); text-shadow: 0 0 10px #9400d3; }
-      100% { color: #ff0000; border-color: #ff0000; box-shadow: -2px 2px 15px rgba(255, 0, 0, 0.8); text-shadow: 0 0 10px #ff0000; }
-    }
+  /* 기본 여백 완전 제거 (중복 태그 삭제 완료) */
+  body, html { 
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    background-color: #000; 
+  }
+  
+  /* 🔥 핵심: 모든 색깔이 순식간에 바뀌는 RGB 애니메이션 정의 */
+  @keyframes rgb-flash {
+    0%   { color: #ff0000; border-color: #ff0000; box-shadow: -2px 2px 15px rgba(255, 0, 0, 0.8); text-shadow: 0 0 10px #ff0000; }
+    15%  { color: #ff7f00; border-color: #ff7f00; box-shadow: -2px 2px 15px rgba(255, 127, 0, 0.8); text-shadow: 0 0 10px #ff7f00; }
+    30%  { color: #ffff00; border-color: #ffff00; box-shadow: -2px 2px 15px rgba(255, 255, 0, 0.8); text-shadow: 0 0 10px #ffff00; }
+    45%  { color: #00ff00; border-color: #00ff00; box-shadow: -2px 2px 15px rgba(0, 255, 0, 0.8); text-shadow: 0 0 10px #00ff00; }
+    60%  { color: #0000ff; border-color: #0000ff; box-shadow: -2px 2px 15px rgba(0, 0, 255, 0.8); text-shadow: 0 0 10px #0000ff; }
+    75%  { color: #4b0082; border-color: #4b0082; box-shadow: -2px 2px 15px rgba(75, 0, 130, 0.8); text-shadow: 0 0 10px #4b0082; }
+    90%  { color: #9400d3; border-color: #9400d3; box-shadow: -2px 2px 15px rgba(148, 0, 211, 0.8); text-shadow: 0 0 10px #9400d3; }
+    100% { color: #ff0000; border-color: #ff0000; box-shadow: -2px 2px 15px rgba(255, 0, 0, 0.8); text-shadow: 0 0 10px #ff0000; }
+  }
 
-    /* 우측 상단 완전 밀착 메뉴 박스 */
-    .custom-menu {
-      position: absolute;
-      top: 0;       
-      right: 0;     
-      background: #000000; 
-      border-left: 3px solid;
-      border-bottom: 3px solid;
-      border-radius: 0;
-      padding: 12px 24px;
-      z-index: 9999;
-      list-style: none;
-      
-      /* 🔥 애니메이션 적용: 0.3초만에 무지개 한 바퀴 돔 (무한 반복) */
-      animation: rgb-flash 0.3s infinite linear; 
-    }
+  /* 우측 상단 완전 밀착 메뉴 박스 */
+  .custom-menu {
+    position: absolute;
+    top: 0;       
+    right: 0;     
+    background: #000000; 
+    border-left: 3px solid;
+    border-bottom: 3px solid;
+    border-radius: 0;
+    padding: 8px 16px; /* 글씨가 작아진 만큼 박스 크기도 줄임 */
+    z-index: 9999;
+    list-style: none;
+    animation: rgb-flash 0.3s infinite linear; 
+  }
 
-    /* 메뉴 안의 글자 스타일 */
-    .custom-menu span {
-      font-weight: bold;
-      font-family: 'Courier New', Courier, monospace;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      cursor: pointer;
-      
-      /* 글자에도 똑같이 빛나는 애니메이션 적용 */
-      animation: rgb-flash 0.3s infinite linear; 
-    }
-  </style>
+  /* 메뉴 안의 글자 스타일 */
+  .custom-menu span {
+    font-size: 12px; /* 👈 글자 크기 줄임! */
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    /* ❌ text-transform: uppercase; 범인 삭제 완료! */
+    letter-spacing: 1px;
+    cursor: pointer;
+    animation: rgb-flash 0.3s infinite linear; 
+  }
+</style>
 </head>
 
 <body>
