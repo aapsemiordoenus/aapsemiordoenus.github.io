@@ -80,48 +80,27 @@
   100% { transform: translate(1px, -2px)  rotate(-1deg);  }
 }
 
-  /* 🔥 3. 흐르는 글자 */
-  @keyframes flow-text {
-    0% { transform: translateX(120%); } 
-    100% { transform: translateX(-120%); } 
-  }
+ /* 🔥 3. 흐르는 글자 (텀 제거 버전) */
+@keyframes flow-text {
+  /* 120% -> 100%로 줄이면 박스 오른쪽 끝에서 바로 시작합니다 */
+  0% { transform: translateX(100%); } 
+  
+  /* -120% -> -100%로 줄이면 왼쪽 끝에 닿자마자 사라지고 오른쪽에서 바로 나옵니다 */
+  100% { transform: translateX(-100%); } 
+}
 
-  /* 우측 상단 메뉴 박스 */
-  .custom-menu {
-    position: absolute;
-    top: 0;       
-    right: 0;     
-    background: #000000; 
-    border-left: 3px solid;
-    border-bottom: 3px solid;
-    border-radius: 0;
-    
-    /* 🚨 160px에서 320px로 2배 확장! */
-    width: 300px; 
-    padding: 8px 0; 
-    overflow: hidden; 
-    white-space: nowrap; 
-    
-    z-index: 9999;
-    list-style: none;
-    
-    /* RGB 발광은 유지, 지진 흔들림은 클릭 가능하게 0.15초로 늦춤 */
-    animation: rgb-flash 0.02s infinite linear, shake 0.15s infinite linear; 
-  }
-
-  /* 메뉴 안의 글자 스타일 */
-  .custom-menu span {
-    display: inline-block; 
-    font-size: 18px; 
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 1px;
-    cursor: pointer;
-    
-    /* 박스가 2배 길어졌으니, 흐르는 속도도 4.0초로 늦춰서 밸런스 맞춤! */
-    animation: rgb-flash 0.02s infinite linear, flow-text 10.0s infinite linear; 
-  }
-</style>
+/* 메뉴 안의 글자 스타일 */
+.custom-menu span {
+  display: inline-block; 
+  font-size: 12px; 
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1px;
+  cursor: pointer;
+  
+  /* 🚨 속도가 너무 느리면 텀이 길게 느껴지니 2.0s ~ 3.0s 정도로 조절해보세요 */
+  animation: rgb-flash 0.02s infinite linear, flow-text 2.5s infinite linear; 
+}</style>
 </head>
 
 <body>
