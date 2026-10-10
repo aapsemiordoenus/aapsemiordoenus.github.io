@@ -30,57 +30,7 @@
     background-color: #000; 
   }
   
-  /* 🔥 1. RGB 무지개 발광 (오타 수정 및 그림자 진하기 1.0 최대치) */
-/* 1%부터 100%까지 색이 물 흐르듯 바뀌는 초정밀 RGB 애니메이션 */
-@keyframes rgb-flash {
-  0%, 100% { 
-    color: #ff0000; border-color: #ff0000; 
-    box-shadow: -2px 2px 15px rgba(255, 0, 0, 1); 
-    text-shadow: 0 0 10px #ff0000; 
-  }
-  16.6% { 
-    color: #ffff00; border-color: #ffff00; 
-    box-shadow: -2px 2px 15px rgba(255, 255, 0, 1); 
-    text-shadow: 0 0 10px #ffff00; 
-  }
-  33.3% { 
-    color: #00ff00; border-color: #00ff00; 
-    box-shadow: -2px 2px 15px rgba(0, 255, 0, 1); 
-    text-shadow: 0 0 10px #00ff00; 
-  }
-  50.0% { 
-    color: #00ffff; border-color: #00ffff; 
-    box-shadow: -2px 2px 15px rgba(0, 255, 255, 1); 
-    text-shadow: 0 0 10px #00ffff; 
-  }
-  66.6% { 
-    color: #0000ff; border-color: #0000ff; 
-    box-shadow: -2px 2px 15px rgba(0, 0, 255, 1); 
-    text-shadow: 0 0 10px #0000ff; 
-  }
-  83.3% { 
-    color: #ff00ff; border-color: #ff00ff; 
-    box-shadow: -2px 2px 15px rgba(255, 0, 255, 1); 
-    text-shadow: 0 0 10px #ff00ff; 
-  }
-}
-
-  /* 🔥 2. 시스템 오류 지진 효과 */
-@keyframes shake {
-  0%   { transform: translate(1px, 1px)   rotate(0deg);   }
-  10%  { transform: translate(-1px, -2px) rotate(-1deg);  }
-  20%  { transform: translate(-3px, 0px)  rotate(1deg);   }
-  30%  { transform: translate(3px, 2px)   rotate(0deg);   }
-  40%  { transform: translate(1px, -1px)  rotate(1deg);   }
-  50%  { transform: translate(-1px, 2px)  rotate(-1deg);  }
-  60%  { transform: translate(-3px, 1px)  rotate(0deg);   }
-  70%  { transform: translate(3px, 1px)   rotate(-1deg);  }
-  80%  { transform: translate(-1px, -1px) rotate(1deg);   }
-  90%  { transform: translate(1px, 2px)   rotate(0deg);   }
-  100% { transform: translate(1px, -2px)  rotate(-1deg);  }
-}
-
-  /* 🔥 3. 흐르는 글자 */
+  /* 🔥 3. 흐르는 글자 애니메이션만 유지 */
   @keyframes flow-text {
     0% { transform: translateX(120%); } 
     100% { transform: translateX(-120%); } 
@@ -89,14 +39,13 @@
   /* 우측 상단 메뉴 박스 */
   .custom-menu {
     position: absolute;
-    top: 0;       
-    right: 0;     
-    background: #000000; 
-    border-left: 3px solid;
-    border-bottom: 3px solid;
+    top: 0;        
+    right: 0;      
+    background: #000000;  
+    border-left: 3px solid #ffffff; /* 흰색 테두리 고정 */
+    border-bottom: 3px solid #ffffff; /* 흰색 테두리 고정 */
     border-radius: 0;
     
-    /* 🚨 160px에서 320px로 2배 확장! */
     width: 300px; 
     padding: 8px 0; 
     overflow: hidden; 
@@ -105,8 +54,7 @@
     z-index: 9999;
     list-style: none;
     
-    /* RGB 발광은 유지, 지진 흔들림은 클릭 가능하게 0.15초로 늦춤 */
-    animation: rgb-flash 0.02s infinite linear, shake 0.15s infinite linear; 
+    /* 발광 및 지진 애니메이션 완전 제거 */
   }
 
   /* 메뉴 안의 글자 스타일 */
@@ -117,9 +65,10 @@
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 1px;
     cursor: pointer;
+    color: #ffffff; /* 글자색 흰색 고정 */
     
-    /* 박스가 2배 길어졌으니, 흐르는 속도도 4.0초로 늦춰서 밸런스 맞춤! */
-    animation: rgb-flash 0.02s infinite linear, flow-text 10.0s infinite linear; 
+    /* 글자가 흐르는 효과(flow-text)만 유지 */
+    animation: flow-text 10.0s infinite linear; 
   }
 </style>
 </head>
